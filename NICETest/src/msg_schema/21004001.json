@@ -1,0 +1,7 @@
+{
+   "response" : { "code" : "12004001",     "type" : "COMMON",         "schema" : "comm_ams_header.json" },
+   "columns" : [
+      { "name" : "CM",                     "kname" : "공통헤더",           "type" : "INC", "include" : "comm_ams_header.json" },
+      { "name" : "CmdType",                "kname" : "1:Reboot, 2:Pwr Off","type" : "AN",  "length" : 1   }
+   ]
+}

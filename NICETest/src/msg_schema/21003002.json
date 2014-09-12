@@ -1,0 +1,14 @@
+{
+   "response" : { "code" : "12003002",     "type" : "COMMON",         "schema" : "comm_ams_header.json" },
+   "columns" : [
+      { "name" : "CM",                     "kname" : "공통헤더",           "type" : "INC", "include" : "comm_ams_header.json" },
+      { "name" : "FieldCount",             "kname" : "환경정보필드갯수",   "type" : "N",   "length"  : 3   },
+      { "name" : "FD",                                                     "type" : "STRUCT", "ref_iteration" : "FieldCount",
+         "struct" : [
+            { "name" : "FieldID",          "kname" : "환경정보필드ID",     "type" : "AN",  "length" : 3 },
+            { "name" : "FieldLen",         "kname" : "환경정보필드길이",   "type" : "N",   "length" : 3 },
+            { "name" : "FieldData",        "kname" : "환경정보Data",       "type" : "AN",  "ref_size" : "FieldLen" }
+         ]
+      }
+   ]
+}

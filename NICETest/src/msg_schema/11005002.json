@@ -1,0 +1,7 @@
+{
+  "response" : { "code" : "22005002",     "type" : "JSON",         "schema" : "22005002.json" },
+  "columns" : [
+     { "name" : "CM",                "kname" : "공통헤더",           "type" : "INC", "include" : "comm_ams_header.json" },
+     { "name" : "_APVersion",        "kname" : "프로그램 버전",      "type" : "AN",  "length" : 8 }
+  ]
+}

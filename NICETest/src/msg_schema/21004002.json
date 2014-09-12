@@ -1,0 +1,9 @@
+{
+   "response" : { "code" : "12004002",     "type" : "COMMON",         "schema" : "comm_ams_header.json" },
+   "columns" : [
+      { "name" : "CM",                     "kname" : "공통헤더",           "type" : "INC", "include" : "comm_ams_header.json" },
+      { "name" : "CmdType",                "kname" : "장치제어명령구분",   "type" : "AN",  "length" : 1   },
+      { "name" : "DevId",                  "kname" : "장치코드",           "type" : "AN",  "length" : 3   },
+      { "name" : "DevCmd",                 "kname" : "명령",               "type" : "AN",  "length" : 1   }
+   ]
+}

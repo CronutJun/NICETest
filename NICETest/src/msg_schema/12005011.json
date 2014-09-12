@@ -1,0 +1,8 @@
+{
+   "columns" : [
+      { "name" : "CM",                     "kname" : "공통헤더",           "type" : "INC", "include" : "comm_ams_header.json" },
+      { "name" : "_AOCUpFilePath",         "kname" : "파일 경로",          "type" : "AN",  "length" : 260, "dec_charset" : "MS949" },
+      { "name" : "_AOCUpFileName",         "kname" : "파일 이름",          "type" : "AN",  "length" : 260, "dec_charset" : "MS949" },
+      { "name" : "_AOCUpFileSize",         "kname" : "파일 크기",          "type" : "N",   "length" : 9 }
+   ]
+}

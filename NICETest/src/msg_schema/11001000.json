@@ -1,0 +1,5 @@
+{
+  "columns" : [
+     { "name" : "CM",                     "type" : "INC",       "include" : "comm_ams_header.json" }
+  ]
+}

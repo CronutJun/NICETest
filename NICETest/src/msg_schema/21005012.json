@@ -1,0 +1,9 @@
+{
+   "response" : { "code" : "12005012",     "type" : "COMMON",         "schema" : "comm_ams_header.json" },
+   "columns" : [
+      { "name" : "CM",                     "kname" : "공통헤더",           "type" : "INC", "include" : "comm_ams_header.json" },
+      { "name" : "_AOCDownFileSavePath",   "kname" : "파일 저장 경로",     "type" : "AN",  "length" : 260, "enc_charset" : "MS949" },
+      { "name" : "_AOCDownFileName",       "kname" : "파일 이름",          "type" : "AN",  "length" : 260, "enc_charset" : "MS949" },
+      { "name" : "_AOCDownFileSize",       "kname" : "파일 크기",          "type" : "N",   "length" : 9  }
+   ]
+}

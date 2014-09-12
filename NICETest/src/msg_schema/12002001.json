@@ -1,0 +1,26 @@
+{
+   "columns" : [
+      { "name" : "CM",                     "kname" : "공통헤더",           "type" : "INC", "include" : "comm_ams_header.json" },
+      { "name" : "SMH",                    "kname" : "SM헤더",             "type" : "AN",  "length"  : 85  },
+      { "name" : "DeviceCount",            "kname" : "장치반복수",         "type" : "N",   "length"  : 3   },
+      { "name" : "DV",                                                     "type" : "STRUCT", "ref_iteration": "DeviceCount",
+         "struct" : [
+            { "name" : "DevID",            "kname" : "장치ID",             "type" : "AN",  "length" : 2 },
+            { "name" : "DevStatus",        "kname" : "장치상태",           "type" : "AN",  "length" : 1 },
+            { "name" : "DevMediaStatus",   "kname" : "매체상태",           "type" : "AN",  "length" : 1 }
+         ]
+      },
+      { "name" : "CstCount",               "kname" : "카세트반복수",       "type" : "N",   "length"  : 3   },
+      { "name" : "CST",                                                    "type" : "STRUCT", "ref_iteration": "CstCount",
+         "struct" : [
+            { "name" : "CstID",            "kname" : "카세트ID",           "type" : "AN",  "length" : 3 },
+            { "name" : "CstClass",         "kname" : "카세트논리구분",     "type" : "AN",  "length" : 1 },
+            { "name" : "CstType",          "kname" : "카세트운용타입",     "type" : "AN",  "length" : 1 },
+            { "name" : "CstDevStatus",     "kname" : "카세트운용상태",     "type" : "AN",  "length" : 1 },
+            { "name" : "CstMediaStatus",   "kname" : "카세트내 매체상태",  "type" : "AN",  "length" : 1 },
+            { "name" : "CstDenom",         "kname" : "카세트내 Notes권종", "type" : "AN",  "length" : 2 },
+            { "name" : "CstCount",         "kname" : "카세트내 Notes매수", "type" : "N",   "length" : 4 }
+         ]
+      },
+   ]
+}
