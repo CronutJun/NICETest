@@ -1,0 +1,13 @@
+{
+   "response" : { "code" : "12003004",     "type" : "COMMON",         "schema" : "comm_ams_header.json" },
+   "columns" : [
+      { "name" : "CM",                     "kname" : "공통헤더",           "type" : "INC", "include" : "comm_ams_header.json" },
+      { "name" : "FD",                                                     "type" : "STRUCT",
+         "struct" : [
+            { "name" : "EmpID",            "kname" : "출동자ID",           "type" : "AN",  "length" : 12 },
+            { "name" : "EmpPhone",         "kname" : "출동자연락처",       "type" : "N",   "length" : 16 },
+            { "name" : "ArriveTime",       "kname" : "도착예정시간",       "type" : "N",   "length" : 6  }
+         ]
+      }
+   ]
+}

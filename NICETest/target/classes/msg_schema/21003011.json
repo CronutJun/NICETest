@@ -1,0 +1,10 @@
+{
+   "response" : { "code" : "12003011",     "type" : "COMMON",         "schema" : "comm_ams_header.json" },
+   "columns" : [
+      { "name" : "CM",                     "kname" : "공통헤더",           "type" : "INC", "include" : "comm_ams_header.json" },
+      { "name" : "_AOCReqRegBaseKey",      "kname" : "1st Path Data",      "type" : "AN",  "length" : 32 },
+      { "name" : "_AOCReqRegSubKey",       "kname" : "2nd Path Data",      "type" : "AN",  "length" : 260 },
+      { "name" : "_AOCReqRegValueKey",     "kname" : "3rd Path Data",      "type" : "AN",  "length" : 64  },
+      { "name" : "_AOCReqRegValue",        "kname" : "Value Data",         "type" : "AN",  "length" : 64  }
+   ]
+}

@@ -1,0 +1,10 @@
+{
+   "response" : { "code" : "12003012",     "type" : "COMMON",         "schema" : "comm_ams_header.json" },
+   "columns" : [
+      { "name" : "CM",                     "kname" : "공통헤더",           "type" : "INC", "include" : "comm_ams_header.json" },
+      { "name" : "_AOCReqIniPathName",     "kname" : "파일경로 및 파일명", "type" : "AN",  "length" : 260 },
+      { "name" : "_AOCReqIniSection",      "kname" : "섹션 명",            "type" : "AN",  "length" : 32  },
+      { "name" : "_AOCReqIniKey",          "kname" : "키 명",              "type" : "AN",  "length" : 64  },
+      { "name" : "_AOCReqIniValue",        "kname" : "Value Data",         "type" : "AN",  "length" : 256, "enc_charset" : "MS949" }
+   ]
+}

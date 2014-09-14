@@ -1,0 +1,10 @@
+{
+   "columns" : [
+      { "name" : "CM",                     "kname" : "공통헤더",           "type" : "INC", "include" : "comm_ams_header.json" },
+      { "name" : "_AOCUpFileType",         "kname" : "파일 타입",          "type" : "AN",  "length" : 1 },
+      { "name" : "_AOCUpFileCompress",     "kname" : "압축 여부",          "type" : "AN",  "length" : 1 },
+      { "name" : "_AOCUpFileDate",         "kname" : "파일 일자",          "type" : "N",   "length" : 8 },
+      { "name" : "_AOCUpFileName",         "kname" : "파일 이름",          "type" : "AN",  "length" : 260, "dec_charset" : "MS949" },
+      { "name" : "_AOCUpFileSize",         "kname" : "파일 크기",          "type" : "N",   "length" : 9 }
+   ]
+}

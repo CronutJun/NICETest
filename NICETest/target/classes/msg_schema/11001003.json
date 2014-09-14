@@ -1,0 +1,7 @@
+{
+  "response" : { "code" : "22001003",     "type" : "COMMON",    "schema" : "comm_ams_header.json" },
+  "columns" : [
+     { "name" : "CM",                     "type" : "INC",       "include" : "comm_ams_header.json" },
+     { "name" : "NT",                     "type" : "INC",       "include" : "network_mng_header.json" }
+  ]
+}

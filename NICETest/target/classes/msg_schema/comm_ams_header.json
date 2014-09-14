@@ -1,0 +1,16 @@
+{
+  "columns" : [
+     { "name" : "_AOCMsgLen",        "kname" : "전문길이",     "type" : "N",        "length" : 9  },
+     { "name" : "_AOCMsgCode",       "kname" : "전문구분코드", "type" : "AN",       "length" : 4  },
+     { "name" : "_AOCServiceCode",   "kname" : "업무구분코드", "type" : "AN",       "length" : 4  },
+     { "name" : "_AOCRespCode",      "kname" : "응답코드",     "type" : "AN",       "length" : 5  },
+     { "name" : "_AOCMsgSendDate",   "kname" : "전문송신일자", "type" : "AN",       "length" : 8  },
+     { "name" : "_AOCMsgSendTime",   "kname" : "전문송신시간", "type" : "AN",       "length" : 6  },
+     { "name" : "_AOCMsgSerialNo",   "kname" : "전문일련번호", "type" : "AN",       "length" : 6  },
+     { "name" : "_AOCTranNo",        "kname" : "거래관리번호", "type" : "AN",       "length" : 36 },
+     { "name" : "_SSTNo",            "kname" : "기기번호",     "type" : "AN",       "length" : 12 },
+     { "name" : "_SSTSerialNo",      "kname" : "기기일련번호", "type" : "AN",       "length" : 20 },
+     { "name" : "_BranchCode",       "kname" : "지점코드",     "type" : "AN",       "length" : 8  },
+     { "name" : "_BankCode",         "kname" : "기관코드",     "type" : "AN",       "length" : 3  }
+  ]
+}

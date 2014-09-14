@@ -1,0 +1,6 @@
+{
+  "response" : { "code" : "12002002",     "type" : "JSON",        "schema" : "12002002.json" },
+  "columns" : [
+     { "name" : "CM",               "kname" : "공통헤더",         "type" : "INC", "include" : "comm_ams_header.json" }
+  ]
+}

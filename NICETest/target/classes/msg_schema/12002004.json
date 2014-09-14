@@ -1,0 +1,13 @@
+{
+   "columns" : [
+      { "name" : "CM",                     "kname" : "공통헤더",           "type" : "INC", "include" : "comm_ams_header.json" },
+      { "name" : "PGCount",                "kname" : "프로그램갯수",       "type" : "N",   "length"  : 3   },
+      { "name" : "FD",                                                     "type" : "STRUCT", "ref_iteration": "FieldCount",
+         "struct" : [
+            { "name" : "PGCode",           "kname" : "프로그램Code",       "type" : "AN",  "length" : 3 },
+            { "name" : "PGVersionLen",     "kname" : "프로그램버전길이",   "type" : "N",   "length" : 3 },
+            { "name" : "PGVersion",        "kname" : "프로그램버전Data",   "type" : "AN",  "ref_size" : "PGVersionLen" }
+         ]
+      }
+   ]
+}
